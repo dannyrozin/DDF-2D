@@ -1,5 +1,5 @@
 /*
-DDF 2021
+DDF 2022
  pose to the camera and press R to export DXF
  */
 
@@ -19,12 +19,14 @@ void setup() {
   String[] cameras = Capture.list();
   video= new Capture(this, width, height, cameras[0]);                     // new OSX requires that you specify the camera
   video.start();
+  image(video,1,1);
 }
 
 
 void draw() { 
   if (video.available()) {
     video.read();
+    video.loadPixels();
     background(255);
     fill(0);
     if (record == true) {

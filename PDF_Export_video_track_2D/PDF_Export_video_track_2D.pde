@@ -1,4 +1,4 @@
-/*DDF 2021
+/*DDF 2022
  click the mouse to select a color to track, when you are ready , press R to export DXF
  */
 
@@ -14,7 +14,7 @@ float snakeX[] =new float[snakeLength];     // array of items of type float hold
 float snakeY[] =new float[snakeLength];  
 
 void setup() {
-  size(640, 480);  // DXF seems to want the P3D mode
+  size(640, 480); 
   String[] cameras = Capture.list();
   video= new Capture(this, width, height, cameras[0]);                     // new OSX requires that you specify the camera
   fill(targetR, targetG, targetB); 
