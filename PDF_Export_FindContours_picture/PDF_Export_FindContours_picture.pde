@@ -1,4 +1,4 @@
-/* DDF 2022
+/* DDF 2023
  finds contours in a picture according to brightness and exports as PDF
  requires the OPENCV for Processing library installed
  move mouse to change the threshold
